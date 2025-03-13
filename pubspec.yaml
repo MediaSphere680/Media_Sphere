@@ -1,0 +1,37 @@
+name: media_sphere
+description: "A new Flutter project."
+
+publish_to: 'none' 
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.7.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+  video_player: ^2.7.0    # Native video playback
+  chewie: ^1.7.0          # Better video UI with controls
+  file_picker: ^8.0.0     # File selection
+  flutter_ffmpeg: ^0.4.2  # Video processing (optional)
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/img.jpg  # Background image
+    - assets/font/futured/Futured.ttf  # Local Futured font
+
+  fonts:
+    - family: Futured
+      fonts:
+        - asset: assets/font/futured/Futured.ttf  
