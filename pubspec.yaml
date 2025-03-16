@@ -6,7 +6,7 @@ publish_to: 'none'
 version: 1.0.0+1
 
 environment:
-  sdk: ^3.7.0
+  sdk: '>=3.7.0 <4.0.0'
 
 dependencies:
   flutter:
@@ -17,6 +17,7 @@ dependencies:
   chewie: ^1.7.0          # Better video UI with controls
   file_picker: ^8.0.0     # File selection
   flutter_ffmpeg: ^0.4.2  # Video processing (optional)
+  syncfusion_flutter_pdfviewer: ^24.1.41 # PDF viewing with web support
 
 dev_dependencies:
   flutter_test:
@@ -29,9 +30,10 @@ flutter:
 
   assets:
     - assets/images/img.jpg  # Background image
+    - assets/logo/logo.jpg   # Logo image (ensure correct format)
     - assets/font/futured/Futured.ttf  # Local Futured font
 
   fonts:
     - family: Futured
       fonts:
-        - asset: assets/font/futured/Futured.ttf  
+        - asset: assets/font/futured/Futured.ttf
